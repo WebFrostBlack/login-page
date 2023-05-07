@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page d'accueil</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    label {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    input[type=text]{
+      margin-bottom: 10px;
+    }
+
+    input[type=text],
+    input[type=password] {
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      width: 300px;
+      font-size: 1.2rem;
+      transition: border-color 0.2s ease-in-out;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      outline: none;
+      border-color: #4285f4;
+    }
+
+    button[type=submit] {
+      background-color: #4285f4;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button[type=submit]:hover {
+      cursor: pointer;
+      background-color: #2d73e6;
+    }
+  </style>
+
+  <h1>Bienvenue sur la page d'accueil</h1>
+  <form action="/verifier-mdp" method="post">
+    <label for="username">Entrez votre nom d'utilisateur :</label>
+    <input type="text" id="username" name="username">
+    <label for="mdp">Entrez le mot de passe :</label>
+    <input type="password" id="mdp" name="mdp">
+    <button type="submit">Valider</button>
+  </form>
+</body>
+</html>
