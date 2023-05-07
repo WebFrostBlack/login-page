@@ -15,7 +15,7 @@ app.use(session({
 }));
 
 const verifierAcces = (req, res, next) => {
-  if (req.session.autorise && req.session.username && req.ip === "::1") {
+  if (req.session.autorise && req.session.username && req.ip === "86.242.112.55") {
     next();
   } else {
     res.status(403).sendFile(path.join(__dirname, '/public/403.html'));
