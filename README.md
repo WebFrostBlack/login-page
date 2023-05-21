@@ -11,3 +11,5 @@
   _Make sure you are in the correct directory where the requirements.txt file is located_
   
   Once the dependencies are installed, run __`node index.js`__ to launch the application.
+  
+  ⚠️ Carefull, before executing the file replace `votre-ip` line 18 of index.js with __``your ip``__ on a classic site, unless you have executed the script on localhost replace with __``::1``__ ⚠️ 
