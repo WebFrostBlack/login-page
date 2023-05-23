@@ -1,4 +1,4 @@
-## FROSTBLACK - Login Page
+## ©FROSTBLACK - Login Page
 
 ### Installation instructions
 ==============================================================
